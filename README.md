@@ -1,6 +1,6 @@
 # Frontend-Developer-Essential-Assignment 
 
-This repository is made to record the experiences and things learned by the mentor [Vishal Rajput](https://github.com/Vishal-raj-1) of the [Frontend Developer Essential Course!](https://github.com/Vishal-raj-1/Frontend-Development-Essentials)
+This repository is made to record the experiences and things learned by the mentor [Vishal Rajput](https://github.com/Vishal-raj-1) in the [Frontend Developer Essential Course!](https://github.com/Vishal-raj-1/Frontend-Development-Essentials)
 
 
 # Portfolio Website :
