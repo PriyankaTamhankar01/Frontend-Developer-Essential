@@ -4,97 +4,146 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about"> About </a></li>
-            <li><a href="#skills"> Skills </a></li>
-            <li> <a href="#education"> Education </a></li>
-            <li> <a href="#experience"> Experience </a></li>
-            <li><a href="#contact"> Contact Me </a></li>
-        </ul>
-    </nav>
 
+    <div class="header">
+        
+        <div class="logo"> <a href="#"><img src="./img/logo.png" alt="logo">Priyanka</a></div> 
+        <i class='bx bx-menu' id="menu"></i></a>
+        
 
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi,my name is Priyanka Tamhankar.I'm a Frontend Developer based in
-            Mumbai,India.
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HsDRpztmDrU" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><br /><br />
-        Social Media Links:
-        <a href="https://www.linkedin.com/in/priyanka-tamhankar-2001/">LinkedIn</a> ,
-        <a href="https://github.com/PriyankaTamhankar01">Github.</a>
-    </section>
-
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-            <li>Git/Github</li>
-        </ul>
-    </section>
-
-    <section class="education" id="education">
-        <h1 class="heading">Education<span></h1>
-        <div class="box-container">
-            <ul>
-                <li>
-                    <h3>Postgraduate Degree</h3>
-                    <p>Master of Computer Application (MCA) ,Indira Gandhi National Open University,Maharashtra,
-                        From:2022-2024</p>
-                </li>
-                <li>
-                    <h3>Graduation</h3>
-                    <p>Bachelor of Science in Information Technology (B.Sc IT) ,Mumbai University ,Maharashtra,
-                        From:2018-2021</p>
-                </li>
-                <li>
-                    <h3>HSC</h3>
-                    <p> Completed 12th from Patkar Varde College , Mumbai,Maharashtra, From:2016-2018</p>
-                </li>
+          <nav class="navbar"> 
+            <ul id="link-group" class="link-group " data-visible="false">
+                <li class="link active"><a href="#home">home</a></li>
+                <li class="link"><a href="#skills">skills</a></li>
+                <li class="link"><a href="#about">about</a></li>
+                <li class="link"><a href="#contact">contact</a></li>
             </ul>
+        </nav>
+
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Priyanka Tamhankar</h1>
+            <h3>And I'm a <span>Frontend Developer</span> based in
+                Mumbai,India.</h3>
+        </div>
+
+
+
+        <div class="social-media">
+            <!-- Social Media Links: -->
+
+            <a href="https://www.linkedin.com/in/priyanka-tamhankar-2001/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://twitter.com/Priyanka310501"><i class='bx bxl-twitter'></i></a>
+            <a href="https://github.com/PriyankaTamhankar01"><i class='bx bxl-github'></i></a>
         </div>
     </section>
 
-    <section class="experience" id="experience">
-        <h1 class="heading">Experience<span></h1>
-        <h4>Internship</h4>
-      <ul>
-        <li> 
-            <a href="https://media.licdn.com/dms/image/C562DAQFNvRTZBqhN0w/profile-treasury-image-shrink_8192_8192/0/1678182394339?e=1680613200&v=beta&t=Sdl4-hiE8vmpq1iwtuDnpXykNf0u5WOvTOOx0PMqO9M" width="400" height="200" alt="LOR.png">Web Development and Designing Intern</a>
-            <p>Developed and launched web-based donation applications that integrate Razorpay for secure payment processing.</p>
-        </li>
-    </ul>    
-    </section>
 
-    
-    <section class="contact" id="contact">
-        <h1 class="heading">Contact Me<span></h1>
-            <form action="">
-            <label for="">Name:</label>
-            <input type="text"><br>
-            <label for="">Email:</label>
-            <input type="email" name="" id=""><br>
-            <label for="">Message:</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea> <br><br>
-          <button type="submit">Submit</button>
-        </form>
-    </section>
-    <footer>  
-        <p>© Priyanka Tamhankar [2023]. All rights reserved.</p>
-      
-    </footer>  
+
+    <!-- skills -->
+    <div class="skill-section" id="skills">
+        <h1 class="heading">skills</h1>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="img/html5.png" class="skill-img" alt="">
+                <h1 class="skill-name">HTML5</h1>
+            </div>
+            <div class="skill-card">
+                <img src="img/css3.png" class="skill-img" alt="">
+                <h1 class="skill-name">CSS3</h1>
+            </div>
+            <div class="skill-card">
+                <img src="img/javascript.png" class="skill-img" alt="">
+                <h1 class="skill-name">javascript</h1>
+            </div>
+            <div class="skill-card">
+                <img src="img/bootstrap.png" class="skill-img" alt="">
+                <h1 class="skill-name">bootstrap</h1>
+            </div>
+            <div class="skill-card">
+                <img src="img/git.png" class="skill-img" alt="">
+                <h1 class="skill-name">git</h1>
+            </div>
+            <div class="skill-card">
+                <img src="img/github.png" class="skill-img" alt="">
+                <h1 class="skill-name">github</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about (Both Education & Experience) -->
+    <section class="about" id="about">
+        <h1 class="heading">About<span></h1>
+
+        <!-- <h1>Education & Experience<span></h1> -->
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <!-- <h2>Web Development Intern(The Spark Foundation)</h2> -->
+                    <h2><a href="https://media.licdn.com/dms/image/C562DAQFNvRTZBqhN0w/profile-treasury-image-shrink_8192_8192/0/1678182394339?e=1680613200&v=beta&t=Sdl4-hiE8vmpq1iwtuDnpXykNf0u5WOvTOOx0PMqO9M"
+                            width="400" height="200" style="text-decoration:none; " alt="LOR.png">Web Development and
+                            Designing Intern</a></h2>
+                    <p>Developed and launched web-based donation applications that integrate Razorpay for secure payment
+                        processing.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Postgraduate Degree</h2>
+                    <p>Master of Computer Application (MCA) ,Indira Gandhi National Open University,Maharashtra,
+                        From:2022-2024.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Graduation</h2>
+                    <p>Bachelor of Science in Information Technology (B.Sc IT) ,Mumbai University ,Maharashtra,
+                        From:2018-2021</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>HSC</h2>
+                    <p>Completed 12th(HSC) from Patkar Varde College , Mumbai,Maharashtra, From:2016-2018</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- contact -->
+        <div class="contact-container" id="contact">
+            <h1 class="heading">Contact<span></h1>
+            <form action="" id="loginForm">
+                <label for="">Name:</label>
+                <input type="text" placeholder="John Doe"><br>
+                <label for="">Email:</label>
+                <input type="email" name="" id="" placeholder="example@gmail.com"><br>
+                <label for="">Message:</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Hey there!"></textarea> <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+        <footer>
+            <p class="copyright">© <a href="https://github.com/PriyankaTamhankar01"
+                    style="text-decoration:none; color:#fff;" target="_blank"> Priyanka Tamhankar[2023]. All rights
+                    reserved.</p>
+        </footer>
+        <script src="script.js"></script>
 
 </body>
 
